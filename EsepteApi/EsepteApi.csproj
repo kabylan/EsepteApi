@@ -8,5 +8,21 @@
     <Folder Include="wwwroot\Uploads\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ML" Version="1.5.2" />
+    <PackageReference Include="Microsoft.ML.ImageAnalytics" Version="1.5.2" />
+    <PackageReference Include="Microsoft.ML.Vision" Version="1.5.2" />
+    <PackageReference Include="SciSharp.TensorFlow.Redist" Version="2.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="MachineLearning\MLModel.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectCapability Include="ModelBuilderGenerated" />
+  </ItemGroup>
 
 </Project>
