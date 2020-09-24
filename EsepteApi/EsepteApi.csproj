@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\Uploads\" />
+    <Folder Include="MachineLearningEro\" />
   </ItemGroup>
 
   <ItemGroup>

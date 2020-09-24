@@ -79,45 +79,45 @@ namespace EsepteApi.Controllers
             System.Diagnostics.Debug.Print("=============== End of process, hit any key to finish ===============");
 
 
-            string komnataTypeRU = "";
+            string typeRU = "";
             switch(predictionResult.Prediction)
             {
                 case "bathroom":
-                    komnataTypeRU = "ванная";
+                    typeRU = "ванная";
                     break;
                 case "bedroom":
-                    komnataTypeRU = "спальняя";
+                    typeRU = "спальняя";
                     break;
                 case "corridor":
-                    komnataTypeRU = "коридор";
+                    typeRU = "коридор";
                     break;
                 case "dining_room":
-                    komnataTypeRU = "столовая";
+                    typeRU = "столовая";
                     break;
                 case "elevator":
-                    komnataTypeRU = "лифт";
+                    typeRU = "лифт";
                     break;
                 case "garage":
-                    komnataTypeRU = "гараж";
+                    typeRU = "гараж";
                     break;
                 case "kitchen":
-                    komnataTypeRU = "кухня";
+                    typeRU = "кухня";
                     break;
                 case "livingroom":
-                    komnataTypeRU = "гостиная";
+                    typeRU = "гостиная";
                     break;
                 case "office":
-                    komnataTypeRU = "офис";
+                    typeRU = "офис";
                     break;
                 case "waitingroom":
-                    komnataTypeRU = "приемная";
+                    typeRU = "приемная";
                     break;
                 default:
-                    komnataTypeRU = "-";
+                    typeRU = "-";
                     break;
             }
 
-            return "{\"komnataType\": \"" + komnataTypeRU + "\" }";
+            return "{\"typeRU\": \"" + typeRU + "\" }";
         }
 
     }
