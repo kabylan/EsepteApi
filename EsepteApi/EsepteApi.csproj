@@ -7,6 +7,7 @@
   <ItemGroup>
     <Folder Include="wwwroot\Uploads\" />
     <Folder Include="MachineLearningEro\" />
+    <Folder Include="MachineLearningNoticeProperty\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -25,5 +26,7 @@
   <ItemGroup>
     <ProjectCapability Include="ModelBuilderGenerated" />
   </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties properties_4launchsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
 
 </Project>

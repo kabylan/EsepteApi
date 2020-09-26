@@ -19,7 +19,6 @@ namespace EsepteApi.Controllers
     {
         IWebHostEnvironment _appEnvironment;
         private static readonly HttpClient client = new HttpClient();
-        private static readonly string esepteKomnataUrl = "http://localhost:6012";
 
         public KomnataController(IWebHostEnvironment appEnvironment)
         {
@@ -72,12 +71,6 @@ namespace EsepteApi.Controllers
 
             // Make a single prediction on the sample data and print results
             var predictionResult = ConsumeModel.Predict(sampleData);
-
-            System.Diagnostics.Debug.Print("Using model to make single prediction -- Comparing actual Label with predicted Label from sample data...\n\n");
-            System.Diagnostics.Debug.Print($"ImageSource: {sampleData.ImageSource}");
-            System.Diagnostics.Debug.Print($"\n\nPredicted Label value {predictionResult.Prediction} \nPredicted Label scores: [{String.Join(",", predictionResult.Score)}]\n\n");
-            System.Diagnostics.Debug.Print("=============== End of process, hit any key to finish ===============");
-
 
             string typeRU = "";
             switch(predictionResult.Prediction)
