@@ -14,7 +14,7 @@ namespace EsepteApi.MachineLearningGender.Model
     {
         private static Lazy<PredictionEngine<ModelInput, ModelOutput>> PredictionEngine = new Lazy<PredictionEngine<ModelInput, ModelOutput>>(CreatePredictionEngine);
 
-        public static string MLNetModelPath = @"C:\Users\esept\source\repos\EsepteApi\EsepteApi\MachineLearningGender\MLModel.zip";
+        public static string MLNetModelPath = "MachineLearningGender/MLModel.zip";
 
         // For more info on consuming ML.NET models, visit https://aka.ms/mlnet-consume
         // Method for consuming model in your app

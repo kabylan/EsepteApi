@@ -27,7 +27,7 @@ namespace EsepteApi.MachineLearning.Model
             MLContext mlContext = new MLContext();
 
             // Load model & create prediction engine
-            string modelPath = @"C:\Users\esept\source\repos\EsepteApi\EsepteApi\MachineLearning\MLModel.zip";
+            string modelPath = "MachineLearning/MLModel.zip";
             ITransformer mlModel = mlContext.Model.Load(modelPath, out var modelInputSchema);
             var predEngine = mlContext.Model.CreatePredictionEngine<ModelInput, ModelOutput>(mlModel);
 

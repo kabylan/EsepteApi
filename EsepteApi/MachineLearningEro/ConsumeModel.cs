@@ -14,7 +14,7 @@ namespace EsepteApi.MachineLearningEro.Model
     {
         private static Lazy<PredictionEngine<ModelInput, ModelOutput>> PredictionEngine = new Lazy<PredictionEngine<ModelInput, ModelOutput>>(CreatePredictionEngine);
 
-        public static string MLNetModelPath = @"C:\Users\esept\source\repos\EsepteApi\EsepteApi\MachineLearningEro\MLModel.zip";
+        public static string MLNetModelPath = "MachineLearningEro/MLModel.zip";
 
 
         // For more info on consuming ML.NET models, visit https://aka.ms/mlnet-consume
